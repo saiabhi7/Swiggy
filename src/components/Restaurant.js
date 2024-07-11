@@ -2,9 +2,9 @@ import React from "react";
 import { CDN_URL } from "../constants/constants";
 
 const Restaurant = ({ resInfo }) => {
-  console.log(resInfo?.promoted);
   return (
     <div
+      data-testid="restaurant-card"
       key={resInfo.id}
       className="w-56 m-2 p-1 cursor-pointer border border-solid border-black bg-gray-50 rounded-xl hover:bg-gray-200"
     >

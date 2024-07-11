@@ -8,7 +8,10 @@ const RestaurantList = ({ header, restaurants }) => {
       <div className="font-bold pl-1">
         <h1>{header}</h1>
       </div>
-      <div className="flex flex-wrap justify-between flex-row">
+      <div
+        key={Math.random()}
+        className="flex flex-wrap justify-between flex-row"
+      >
         {restaurants.map((res) => {
           const resInfo = res?.info;
           return (

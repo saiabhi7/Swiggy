@@ -34,7 +34,10 @@ const Header = () => {
           <Link to="/cart">
             <li className="px-6 relative flex justify-between">
               <div className="font-bold">Cart</div>
-              <div className="absolute flex justify-center items-center font-bold right-0 top-0 w-5 h-5 text-xs rounded-full bg-green-400">
+              <div
+                data-testid="noOfCartItems"
+                className="absolute flex justify-center items-center font-bold right-0 top-0 w-5 h-5 text-xs rounded-full bg-green-400"
+              >
                 {noOfCartItems}
               </div>
             </li>

@@ -16,6 +16,7 @@ const SubMenu = ({ itemCards }) => {
         const info = itemCard?.card?.info;
         return (
           <div
+            data-testid="items"
             key={info.id}
             className="border-t-2 p-2 m-2 flex justify-between relative"
           >

@@ -58,7 +58,7 @@ const Body = () => {
     setWhatsOnYourMindItems(whatsOnYourMindItems);
   };
 
-  if (restaurantsToDisplay.length === 0) return <div>No Products</div>;
+  //if (restaurantsToDisplay.length === 0) return <div>No Products</div>;
 
   return (
     <div className="m-2 p-2">
@@ -70,6 +70,7 @@ const Body = () => {
       <div className="p-4 w-1/4">
         <input
           type="text"
+          data-testid="search-input"
           className="w-full border-black border-2 rounded-3xl p-2"
           placeholder="Search Restaurants..."
           onChange={(e) => setSearchValue(e.target.value)}
